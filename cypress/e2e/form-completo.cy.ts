@@ -57,8 +57,8 @@ describe('Formulário Completo - Fluxo E2E', () => {
     cy.get('[data-test="button-remover-dependente-1"]').click()
     cy.get('[data-test="dependente-row-1"]').should('not.exist')
 
-    // anexa avatar (arquivo colocado em /avatar/avatar.jpeg)
-    cy.get('[data-test="input-form-avatar"]').selectFile('avatar/avatar.jpeg', { force: true })
+    // anexa avatar (arquivo colocado em /cypress/fixtures/avatar.jpeg)
+    cy.get('[data-test="input-form-avatar"]').selectFile('cypress/fixtures/avatar.jpeg', { force: true })
 
     // opcional: validar que o input recebeu o arquivo
     cy.get('[data-test="input-form-avatar"]').then($input => {
