@@ -9,7 +9,8 @@ import {
   Search,
   Table,
   AlertCircle,
-  Home
+  Home,
+  Zap
 } from "lucide-react";
 
 const navItems = [
@@ -23,6 +24,7 @@ const navItems = [
   { to: "/busca", label: "Autocomplete", icon: Search },
   { to: "/tabela", label: "Tabela Paginada", icon: Table },
   { to: "/modal", label: "Modal de Confirmação", icon: AlertCircle },
+  { to: "/casos-especiais", label: "Casos Especiais", icon: Zap },
 ];
 
 export function Sidebar() {
