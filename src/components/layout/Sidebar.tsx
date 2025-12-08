@@ -24,6 +24,9 @@ const navItems = [
   { to: "/busca", label: "Autocomplete", icon: Search },
   { to: "/tabela", label: "Tabela Paginada", icon: Table },
   { to: "/modal", label: "Modal de Confirmação", icon: AlertCircle },
+  { to: "/formularios", label: "Formulários", icon: PackageOpen },
+  { to: "/form-completo", label: "Formulário Completo", icon: PackageOpen },
+  
   { to: "/casos-especiais", label: "Casos Especiais", icon: Zap },
 ];
 

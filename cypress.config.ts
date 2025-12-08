@@ -1,0 +1,12 @@
+import { defineConfig } from 'cypress'
+
+export default defineConfig({
+  e2e: {
+    baseUrl: 'http://localhost:8081',
+    specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
+    supportFile: 'cypress/support/e2e.ts',
+    // viewport reduzido para caber mais conteúdo na tela durante os testes
+    viewportWidth: 1200,
+    viewportHeight: 700,
+  },
+})
