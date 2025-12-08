@@ -13,6 +13,7 @@ import ProdutoDetalhePage from "./pages/ProdutoDetalhePage";
 import AutocompletePage from "./pages/AutocompletePage";
 import TabelaPaginadaPage from "./pages/TabelaPaginadaPage";
 import ModalPage from "./pages/ModalPage";
+import CasosEspeciaisPage from "./pages/CasosEspeciaisPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/busca" element={<AutocompletePage />} />
           <Route path="/tabela" element={<TabelaPaginadaPage />} />
           <Route path="/modal" element={<ModalPage />} />
+          <Route path="/casos-especiais" element={<CasosEspeciaisPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
