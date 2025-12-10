@@ -26,6 +26,7 @@ const navItems = [
   { to: "/modal", label: "Modal de Confirmação", icon: AlertCircle },
   { to: "/formularios", label: "Formulários", icon: PackageOpen },
   { to: "/form-completo", label: "Formulário Completo", icon: PackageOpen },
+  { to: "/debug-form", label: "Debug Form", icon: AlertCircle },
   
   { to: "/casos-especiais", label: "Casos Especiais", icon: Zap },
 ];

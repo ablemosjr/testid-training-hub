@@ -16,6 +16,7 @@ import FormCompletoPage from "./pages/FormCompletoPage";
 import ModalPage from "./pages/ModalPage";
 import CasosEspeciaisPage from "./pages/CasosEspeciaisPage";
 import FormulariosPage from "./pages/FormulariosPage";
+import DebugFormPage from "./pages/DebugFormPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/busca" element={<AutocompletePage />} />
           <Route path="/tabela" element={<TabelaPaginadaPage />} />
           <Route path="/form-completo" element={<FormCompletoPage />} />
+          <Route path="/debug-form" element={<DebugFormPage />} />
           <Route path="/modal" element={<ModalPage />} />
           <Route path="/casos-especiais" element={<CasosEspeciaisPage />} />
           <Route path="/formularios" element={<FormulariosPage />} />
