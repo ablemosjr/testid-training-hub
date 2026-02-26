@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 // Teste E2E de Login (Cypress)
 // Comentários explicativos em Português (pt-BR)
 
