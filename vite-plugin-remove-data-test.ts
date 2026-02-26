@@ -24,7 +24,6 @@ export function removeDataTest(): Plugin {
         if (original !== cleaned) {
           writeFileSync(filePath, cleaned, "utf-8");
           total++;
-          console.log(`[remove-data-test] ✓ ${file}`);
         }
       }
     },
