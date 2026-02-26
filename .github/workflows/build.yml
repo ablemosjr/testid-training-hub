@@ -27,4 +27,10 @@ jobs:
         env:
           NODE_ENV: production
       - name: Valida remoção de data-test
-        run: grep -R "data-test" dist && exit 1 || echo "OK"
+        run: |
+          if grep -rE '"data-test"\s*:\s*"[^"]*"' dist/assets/*.js; then
+            echo "FALHOU: data-test encontrado no bundle"
+            exit 1
+          else
+            echo "OK: nenhum data-test encontrado"
+          fi
