@@ -1,19 +1,22 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import { removeDataTest } from "./vite-plugin-remove-data-test";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8081,
   },
   plugins: [
-    react(),
+    react({
+      babel: {
+        plugins: mode === "production"
+          ? [["react-remove-properties", { properties: ["data-test"] }]]
+          : [],
+      },
+    }),
     mode === "development" && componentTagger(),
-    mode === "production" && removeDataTest(),
   ].filter(Boolean),
   resolve: {
     alias: {
